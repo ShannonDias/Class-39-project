@@ -10,7 +10,7 @@ var form, player, game;
 
 var cars, car1, car2, car3, car4;
 
-var track, ground, car1I, car2I,car3I,car4I,
+var track, ground, car1I, car2I,car3I,car4I
 
 function preload (){
   track = loadImage('images/track.jpg')
@@ -38,5 +38,8 @@ function draw(){
   if(gameState === 1){
     clear();
     game.play();
+  }
+  if (gameState === 2){
+    game.End();
   }
 }
